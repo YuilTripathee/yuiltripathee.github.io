@@ -1,1 +1,246 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- unicode character set used -->
+    <meta charset="UTF-8">
+    <!-- making the page responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- making compatible to internet explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- title of the page -->
+    <title>Yuil Tripathee</title>
+    <!-- adding favicon -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <!-- adding w3.css framework -->
+    <link rel="stylesheet" href="w3.css">
+    <!-- adding font-awesome fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- adding google fonts-Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- adding optional styles -->
+    <style>
+        /* embedding fonts to the page */
+        body,h1,h2,h3,h4,h5 {
+            font-family: "Poppins", sans-serif
+        }
+        /* initialising the font for the body */
+        body {
+            font-size:16px;
+        }
+        /* customising w3-half */
+        .w3-half img {
+            margin-bottom:-6px;
+            margin-top:16px;
+            opacity:0.8;
+            cursor:pointer
+        }
+        .w3-half img:hover {
+            opacity:1
+        }
+        /* customising scroll bar */
+        ::-webkit-scrollbar {
+            width : 10px;
+            height: 6px;
+            background-color: #ddd;
+        }
+        ::-webkit-scrollbar-button {
+            display: none;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    
+    
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding w3-animate-left" style="z-index:3;width:300px;font-weight:bold;overflow-y: auto;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container w3-padding-32">
+        <img src="res/dev.jpg" alt="picture" class="w3-image w3-round w3-card-4 w3-padding-8">
+        <h3 class="w3-padding-16 w3-center"><b>Yuil Tripathee</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#intro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-codepen"></i> Introduction</a> 
+      <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-laptop"></i> Skills</a> 
+      <a href="#stats" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-line-chart"></i> Stats</a> 
+      <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-trophy"></i> Projects</a> 
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-phone"></i> Contact</a>
+    </div>
+  </nav>
+  
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding" style="top:0">
+    <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()"><i class="fa fa-navicon"></i></a>
+    <span>Yuil Tripathee</span>
+  </header>
+  
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-animate-top" style="margin-left:340px;margin-right:40px">
+  
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="intro">
+      <h1 class="w3-jumbo w3-hide-small"><b>Software Engineering</b></h1>
+      <h1 class="w3-xxxlarge w3-text-blue"><b>Introduction.</b></h1>
+      <hr style="width:50px;border:5px solid #2196F3" class="w3-round">
+    </div>
+    
+    <!-- introduction label -->
+    <div class="w3-container">
+        <p>Hi, I am Yuil Tripathee. I am enrolled in computer engineering in Brahmarupa Secondary School. I currently study in Grade X. During my days in engineering, I've learned so many wonderful things about web and UI designing, logo designing, mobile development, desktop application development, back end programming using Node.JS many more. As a hobby, I do projects on software development and I especially work on client-side applications.</p>
+        <p>Currently, I develop web apps using JavaScript (Angular 4). It made me very easy to work on windows development without having to go for .NET. Now, I also develop hybrid cross platform applications (for <i class="fa fa-windows w3-large w3-text-blue"></i>, <i class="fa fa-apple w3-large"></i> and <i class="fa fa-linux w3-large w3-text-indigo"></i>). I am also planning to move on Android and iOS development very soon. I hope you see and review my projects.</p>
+        <p>I publish my projects and creations in this website.</p>
+    </div>
+  
+    <!-- Skill level -->
+    <div class="w3-container" id="skills" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-blue"><b>Skills.</b></h1>
+      <hr style="width:50px;border:5px solid #2196F3" class="w3-round">
+      <p class="w3-xlarge">Web Designing</p>
+      <div class="w3-light-grey w3-round-xlarge">
+        <div class="w3-container w3-round-xlarge w3-blue w3-animate-left" style="width:85%;height:20px;"></div>
+      </div>
+      <p class="w3-xlarge">Graphics and Logo Design</p>
+      <div class="w3-light-grey w3-round-xlarge">
+        <div class="w3-container w3-round-xlarge w3-green w3-animate-left" style="width:50%;height:20px;"></div>
+      </div>
+      <p class="w3-xlarge">JavaScript</p>
+      <div class="w3-light-grey w3-round-xlarge">
+        <div class="w3-container w3-round-xlarge w3-blue w3-animate-left" style="width:65%;height:20px;"></div>
+      </div>
+      <p class="w3-xlarge">Desktop and Mobile Development</p>
+      <div class="w3-light-grey w3-round-xlarge">
+        <div class="w3-container w3-round-xlarge w3-orange w3-animate-left" style="width:45%;height:20px;"></div>
+      </div>
+      <p class="w3-xlarge">Back-end Development (PHP)</p>
+      <div class="w3-light-grey w3-round-xlarge">
+        <div class="w3-container w3-round-xlarge w3-red w3-animate-left" style="width:10%;height:20px;"></div>
+      </div>
+    </div>
+    
+    <!-- Statistics -->
+    <div class="w3-container" id="stats" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-blue"><b>Stats.</b></h1>
+      <hr style="width:50px;border:5px solid #2196F3" class="w3-round">
+      <div class="w3-row-padding w3-padding-32">
+          <div class="w3-quarter">
+              <div class="w3-center w3-card-4 w3-padding-8 w3-container">
+                  <p class="w3-jumbo w3-text-blue">30+</p>
+                  <p class="w3-xlarge">Partners now</p>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                  <div class="w3-center w3-card-4 w3-padding-8 w3-container">
+                      <p class="w3-jumbo w3-text-blue">1+</p>
+                      <p class="w3-xlarge">Projects done</p>
+                  </div>
+            </div>
+            <div class="w3-quarter">
+                <div class="w3-center w3-card-4 w3-padding-8 w3-container">
+                    <p class="w3-jumbo w3-text-blue">99%</p>
+                    <p class="w3-xlarge">Happy clients</p>
+                </div>
+          </div>
+          <div class="w3-quarter">
+                <div class="w3-center w3-card-4 w3-padding-8 w3-container">
+                    <p class="w3-jumbo w3-text-blue">0</p>
+                    <p class="w3-xlarge">Meetings done</p>
+                </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="w3-container" id="projects" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Projects.</b></h1>
+        <hr style="width:50px;border:5px solid #2196F3" class="w3-round">
+        <!-- GPA Analyser -->
+        <div>
+            <h1 class="w3-xxlarge">Enrollment for Grade XI</h1>
+            <p>This application takes the grades and the GPA of the students who just have graduated from Grade 10 and by the rules and standards set by the Ministry of Education of Nepal, this app shows the courses available for the student to enroll in Grade XI as per the grades and GPA scored. Here, I have made available the 64-bit installer for Windows to install on your computer.</p>
+            <p>This application totally relies over the JavaScript and doesn't require contact from any application server. Therefore, I have made it as effective as possible to run on the client-side.</p>
+            <p>Application will be available on other platforms (macOS and linux) soon.</p>
+            <div class="w3-container w3-hide-small">
+                <img src="res/pc.png" alt="pc" class="w3-image w3-card-4">
+                <p class="w3-opacity w3-center"><i>Screenshot of Enrollment for Grade XI project</i></p>
+            </div>
+            <div class="w3-padding-16 w3-center">
+                <a href="http://"><button class="w3-button w3-blue w3-large w3-padding-16 w3-center">Download 64-bit Installer for Windows</button></a>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Contact -->
+    <div class="w3-container" id="contact" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Contact.</b></h1>
+        <hr style="width:50px;border:5px solid #2196F3" class="w3-round">
+        <div class="w3-display-container w3-padding-16">
+            <div class="w3-container w3-quarter">
+                <p class="w3-xlarge w3-text-blue"><i class="fa fa-phone"></i> Phone</p>
+                <p>+977 9816111674</p>
+            </div>
+            <div class="w3-container w3-quarter">
+                <p class="w3-xlarge w3-text-blue"><i class="fa fa-github"></i> GitHub</p>
+                <p>@YuilTripathee</p>
+            </div>
+            <div class="w3-container w3-quarter">
+                <p class="w3-xlarge w3-text-blue"><i class="fa fa-twitter"></i> Twitter</p>
+                <p>@TripatheeYuil</p>
+            </div>
+            <div class="w3-container w3-quarter">
+                <p class="w3-xlarge w3-text-blue"><i class="fa fa-envelope"></i> Mail</p>
+                <p style="overflow-x:auto;">yuiltripathee79@gmail.com</p>
+            </div>
+        </div> 
+
+      <p>Do you want me to design your project? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+      <form action="mailto:yuiltripathee79@gmail.com" method="post" enctype="text/plain">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Mail" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Subject" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+      </form>  
+    </div>
+  
+  <!-- End page content -->
+  </div>
+  
+  <!-- W3.CSS Container -->
+  <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+      <div class="w3-right">
+          <p><b>Designed and developed by:</b></p>
+          <p>Yuil Tripathee <br>Copyright &copy; 2017 <br>All rights reserved</p>
+      </div>
+    </div>
+  
+  <script>
+  // Script to open and close sidebar
+  function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+</body>
+</html>
