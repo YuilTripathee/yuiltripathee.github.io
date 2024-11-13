@@ -1,2 +1,2 @@
-# This is an official site of Yuil Tripathee, studying computer engineering in Nepal.
+# This is an my main website. I'm computer engineering student at KMUTT.
 
